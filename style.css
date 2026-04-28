@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  height: 100vh;                 
+  display: flex;           
+  justify-content: center;    
+  align-items: center; 
+  background-color: rgb(20, 20, 20);     
+  min-height: 100vh;
+}
+.container{
+    background-color:white;
+    height: 60vh;
+    width: 55vh;
+    padding: 1.5rem;
+    border-radius: 40px;
+ }
+ form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+ border-radius: 0.4rem;
+}
+form input{
+    border:2px solid grey;
+    padding-left:0.4rem ;
+    height: 3rem;
+    font-size:1rem;
+}
+.select_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+ .select1{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+form img{
+    height: 2.5rem;
+}
+.msg{
+    margin-top:2rem;
+}
+.foot{
+    margin-top: 2rem;
+}

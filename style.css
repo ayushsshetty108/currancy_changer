@@ -52,4 +52,8 @@ form img{
 }
 .foot{
     margin-top: 2rem;
+    height: 3rem;
+    border: 2px solid gray;
+    background-color: blueviolet;
+    color: aliceblue;
 }

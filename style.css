@@ -1,59 +1,98 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding/border don’t break layout */
 }
+
 body {
-  height: 100vh;                 
+  min-height: 100vh;                 
   display: flex;           
   justify-content: center;    
   align-items: center; 
   background-color: rgb(20, 20, 20);     
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
-.container{
-    background-color:white;
-    height: 60vh;
-    width: 55vh;
-    padding: 1.5rem;
-    border-radius: 40px;
- }
- form{
-    margin: 2rem 0 1rem 0;
+
+.container {
+  background-color: white;
+  height: auto; /* let content decide height */
+  width: 90%;   /* relative width for smaller screens */
+  max-width: 400px; /* cap width for larger screens */
+  padding: 1.5rem;
+  border-radius: 40px;
 }
-form select,button,input{
-    width: 100%;
-    border: none;
-    outline: none;
- border-radius: 0.4rem;
+
+form {
+  margin: 2rem 0 1rem 0;
 }
-form input{
-    border:2px solid grey;
-    padding-left:0.4rem ;
-    height: 3rem;
-    font-size:1rem;
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
 }
-.select_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
+
+form input {
+  border: 2px solid grey;
+  padding-left: 0.4rem;
+  height: 3rem;
+  font-size: 1rem;
 }
- .select1{
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    border: 1px solid gray;
+
+.select_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 1rem;       /* spacing when wrapped */
 }
-form img{
-    height: 2.5rem;
+
+.select1 {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 0.3rem;
 }
-.msg{
-    margin-top:2rem;
+
+form img {
+  height: 2.5rem;
 }
-.foot{
-    margin-top: 2rem;
-    height: 3rem;
-    border: 2px solid gray;
-    background-color: blueviolet;
-    color: aliceblue;
+
+.msg {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.foot {
+  margin-top: 2rem;
+  height: 3rem;
+  border: 2px solid gray;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  .foot {
+    font-size: 0.9rem;
+  }
+
+  form img {
+    height: 2rem;
+  }
 }
